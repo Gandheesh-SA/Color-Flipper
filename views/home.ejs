@@ -14,8 +14,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b183386f5.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Quick Byte</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Use the search bar to find hex code of a color. <i class="far smile fa-smile fa-2x"></i></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
     <nav class="navbar s bg-light justify-content-between">
         <a class="navbar-brand "><span class="he">Colour Flipper</span></a>
         <form class="form-inline" action="/" method="post">
@@ -41,6 +65,9 @@
             document.getElementById("name").innerHTML="Background Color: #"+randomColor;   
             document.getElementById("name").style.color='#'+randomColor;
         });
+        $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
     </script>
 </body>
 </html>
