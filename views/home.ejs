@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b183386f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar s bg-light justify-content-between">
+        <a class="navbar-brand "><span class="he">Colour Flipper</span></a>
+        <form class="form-inline" action="/" method="post">
+            <input class="form-control mr-sm-2" name="searchColor" type="search" placeholder="Enter hex code" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    </nav>
+      <section id="home">
+        <div class="center">
+            <div class="head">
+            <h3 id="name">Background Color:#ffffff</h3>
+            </div>
+            <button id="select" type="button" class="btn d btn btn-light btn-lg"><span>Generate</span></button>
+        </div>
+      </section>
+      <footer>
+          <p>Made and mainted by S.A.Gandheesh with love <i class="fas m fa-heart"></i></p>
+      </footer>
+    <script>
+        document.getElementById("select").addEventListener("click",() =>{
+            const randomColor= Math.floor(Math.random()*16777215).toString(16);
+            document.getElementById("home").style.backgroundColor='#' + randomColor;
+            document.getElementById("name").innerHTML="Background Color: #"+randomColor;   
+            document.getElementById("name").style.color='#'+randomColor;
+        });
+    </script>
+</body>
+</html>

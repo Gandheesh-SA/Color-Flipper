@@ -1,0 +1,51 @@
+.s
+{
+    height: 7vh;
+}
+#home
+{
+    height: 86vh;
+    background-color: whitesmoke;
+    width: 100vw;
+}
+.center{
+    padding-top: 34vh;
+    padding-left: 30vw;
+}
+.head h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    color:white;
+}
+.head{
+    padding: 2.5rem;
+    background-color: black;
+    width: 38rem;
+    border-radius: 1.5rem;
+}
+.d{
+    margin-top: 2.2rem;
+    margin-left: 12rem;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 1.4rem;
+}
+span{
+    font-family: 'Ubuntu', sans-serif;
+}
+.he{
+    font-size: 1.5rem;
+}
+footer{
+    height: 7vh;
+    background-color: black;
+    color: gray;
+    font-family: 'Oxygen', sans-serif;
+}
+footer p{
+  text-align: center;
+  padding-top: .8rem;
+}
+.m{
+    color: red;
+}
