@@ -49,6 +49,12 @@ footer p{
 .m{
     color: red;
 }
-.smile{
-    color: #FFD800;
+.color{
+    color: #851e3e;
+}
+.modal-body p{
+ font-size: 1.5rem;
+}
+.ok{
+    width: 6rem;
 }
